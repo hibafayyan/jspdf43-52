@@ -1,13 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chap 43-59</title>
 </head>
+
 <body>
-    <h1 ><a href="#" id="alertClick">alert box on click on a link</a></h1>
+    <h1><a href="#" id="alertClick">alert box on click on a link</a></h1>
+
+
+    <div>
+        <h1>Mobile Gallery</h1>
+        <img src=https://www.lahorecentre.com/cdn/shop/files/Samsung-Galaxy-S26-Ultra-512GB-Storage-12GB-RAM-2-600x600_239bb0fe-064d-4a95-9808-f4328d3446e9.webp?v=1778324822&width=1200
+            alt="Samsung Galaxy S2" class="mobile" width="120">
+            
+ <img src=https://d1iv6qgcmtzm6l.cloudfront.net/products/lg_6WzLdBKZfIRq6LJ6JbrFUApyIrHtpPR7nPzkFDr0.jpg
+            alt="Samsung Galaxy S2" class="mobile" width="120">
+
+             <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu67zAJS-XK4HGu75upgBMMqN7zHWqKf9TvOeCSNUMhLL6bPrxtS8phq8&s=10
+            alt="Samsung Galaxy S2" class="mobile" width="120">
+
+             <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBWPHbfLUTYggGY2yzDZn3E2k7Ac9fjvisBSByy8gsYvJYHiJAbFZSiM&s=10
+            alt="Samsung Galaxy S2" class="mobile" width="120">
+
+
+    </div>
+<div>
+    <h2>Student Records</h2>
+
+<table id="studentTable">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Course</th>
+    <th>Action</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Ali</td>
+    <td>20</td>
+    <td>Web Development</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Ahmed</td>
+    <td>21</td>
+    <td>Graphic Design</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>Hassan</td>
+    <td>19</td>
+    <td>AI</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>4</td>
+    <td>Usman</td>
+    <td>22</td>
+    <td>Flutter</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>5</td>
+    <td>Bilal</td>
+    <td>20</td>
+    <td>Python</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>6</td>
+    <td>Hamza</td>
+    <td>23</td>
+    <td>Java</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>7</td>
+    <td>Saad</td>
+    <td>21</td>
+    <td>React</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>8</td>
+    <td>Zain</td>
+    <td>20</td>
+    <td>Node JS</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>9</td>
+    <td>Fahad</td>
+    <td>22</td>
+    <td>UI/UX</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+<tr>
+    <td>10</td>
+    <td>Shayan</td>
+    <td>19</td>
+    <td>Cyber Security</td>
+    <td><button class="deleteBtn">Delete</button></td>
+</tr>
+
+</table>
+</div>
+
+
+<div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJxmxrogh-HNVMDYcbTs3UrUFrAdDIOdJICLtc3bAEEyAExybZBXiaIo&s=10"
+     id="myImage"
+     onmouseover="changeImage()"
+     onmouseout="resetImage()"
+     width="300">
+</div>
+
+<div>
+<h2>Counter App</h2>
+
+<h1 id="count">0</h1>
+
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+</div>
+
+<div class="container">
+
+<h2>Signup Form</h2>
+
+<form id="signupForm">
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button type="submit">Submit</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<div class="card">
+
+<h2>iPhone 16 Pro Max</h2>
+
+<p>
+Apple iPhone 16 Pro Max is the latest flagship smartphone.
+<span id="moreText" style="display:none;">
+It comes with an A18 Pro chip, 6.9-inch OLED display,
+48MP camera, Titanium body, USB-C charging,
+long battery life, and advanced AI features.
+</span>
+</p>
+
+<button id="btn">Read More</button>
+
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Record</title>
+</head>
+<body>
+
+<h2>Student Form</h2>
+
+<form id="studentForm">
+
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+    <input type="number" id="age" placeholder="Enter Age"><br><br>
+
+    <input type="text" id="course" placeholder="Enter Course"><br><br>
+
+    <button type="submit">Add Student</button>
+
+</form>
+
+<br>
+
+<table border="1" cellpadding="10">
+
+    <thead>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+
+    </thead>
+
+    <tbody id="tableBody">
+
+    </tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
 
     <script src="./app.js"></script>
 </body>
+
 </html>
